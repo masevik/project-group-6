@@ -1,0 +1,18 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.52;
+  // @include font(14px, null, 1.71, 0.03em);
+  color: var(--black-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

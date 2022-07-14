@@ -1,2 +1,26 @@
-@import './common';
-@import './example';
+@import './utils/visually-hidden';
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/reset';
+@import './base/common';
+
+@import './components/section';
+@import './components/container';
+@import './components/navigation';
+@import './components/mobile_menu';
+@import './components/cardset';
+@import './components/socials';
+@import './components/button';
+@import './components/logo';
+@import './components/backdrop';
+@import './components/modal';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/contacts';
+@import './layout/footer';
