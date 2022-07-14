@@ -7,20 +7,46 @@
       <br />
       <span class="hero__title-contrast">passion</span>
     </h1>
-    <div class="hero__bg"></div>
-    <div class="hero__wrapper">
-      <ul class="hero__list list">
-        <li class="hero__item">
-          <a href="#products" class="hero__link hero__link-contrast link"
-            >Products</a
-          >
-        </li>
-        <li class="hero__item">
-          <a href="#about" class="hero__link hero__link-light link"
-            >How it’s made?</a
-          >
-        </li>
-      </ul>
+    <div class="hero__bg">
+      <picture class="hero_icecream">
+        <source
+          srcset="./images/heroicecream.png 1x, ./images/heroicecream-2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/heroicecream-tab.png    1x,
+            ./images/heroicecream-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/heroicecream-mob.png    1x,
+            ./images/heroicecream-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/heroicecream.png"
+          alt="icecream"
+          width="171"
+          height="410"
+        />
+      </picture>
     </div>
+
+    <ul class="hero__list list">
+      <li class="hero__item">
+        <a href="#products" class="hero__link hero__link-contrast link"
+          >Products</a
+        >
+      </li>
+      <li class="hero__item">
+        <a href="#about" class="hero__link hero__link-light link"
+          >How it’s made?</a
+        >
+      </li>
+    </ul>
   </div>
 </section>
