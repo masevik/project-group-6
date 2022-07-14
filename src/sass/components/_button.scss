@@ -1,3 +1,6 @@
-.subscribe__icon {
-  fill: black;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include font(16px, 700, 1.3);
 }
