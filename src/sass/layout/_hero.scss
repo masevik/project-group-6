@@ -2,21 +2,43 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--main-background-color);
+  overflow-x: hidden;
 }
 
 .hero__container {
   position: relative;
 }
-.hero__title {
+
+.hero__bg {
+  width: 346px;
+  height: 344px;
+  margin-top: 83px;
+  margin-left: 15px;
+  border-radius: 50%;
+  background-color: var(--contrast-bg-color);
+}
+
+.hero_icecream {
   position: absolute;
-  top: 36vh;
+  top: 0;
+  left: 119px;
+  transform: translateY(9px);
+}
+
+.hero__wrapper {
+  position: absolute;
+  top: 111px;
   left: 20px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+
   font-family: 'Titan One', arial;
   @include font(26px, 400, 1.154);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--white-text-color);
-  z-index: 2;
 }
 
 .hero__title-contrast {
@@ -25,27 +47,8 @@
   color: var(--accent-color);
 }
 
-.hero__bg {
-  position: absolute;
-  width: 346px;
-  height: 344px;
-  margin-top: 26%;
-  left: 11%;
-  border-radius: 50%;
-  background-color: var(--contrast-bg-color);
-}
-
-.hero_icecream {
-  position: absolute;
-  bottom: -17%;
-  left: 81px;
-}
-
 .hero__list {
   display: flex;
-  position: absolute;
-  top: 61vh;
-  z-index: 3;
 }
 
 .hero__item {
@@ -66,25 +69,7 @@
   background-color: var(--accent-color);
   color: var(--white-text-color);
 
-  &::before {
-    content: '';
-    background-color: green;
-    opacity: 0.3;
-    transform: skew(-30deg) translateX(-10%);
-    width: 50%;
-    height: 150%;
-    position: absolute;
-    top: -20%;
-    left: -50%;
-    z-index: -3;
-    transition: 0.5s ease;
-    visibility: hidden;
-  }
-  &:hover:before {
-    left: -2%;
-    z-index: 4;
-    overflow: hidden;
-    visibility: visible;
+  &:hover {
   }
 }
 
@@ -92,23 +77,6 @@
   background-color: var(--white-text-color);
   color: var(--accent-color);
 
-  &::before {
-    content: '';
-    background-color: green;
-    opacity: 0.3;
-    transform: skew(-30deg) translateX(-10%);
-    width: 60%;
-    height: 150%;
-    position: absolute;
-    top: -20%;
-    left: 110%;
-    z-index: -1;
-    visibility: hidden;
-    transition: 0.5s ease;
-  }
-  &:hover:before {
-    left: 50%;
-    z-index: 4;
-    visibility: visible;
+  &:hover {
   }
 }
