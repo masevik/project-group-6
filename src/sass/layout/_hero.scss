@@ -59,6 +59,7 @@
   }
 }
 .hero__link {
+  display: block;
   @include font(8px, 400, 1.25);
   padding-top: 8px;
   padding-right: 16px;
