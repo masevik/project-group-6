@@ -129,17 +129,8 @@
   width: 162px;
   padding: 0px 32px;
   align-items: center;
-
-  &:hover {
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
-  }
 }
 
 .contacts-section_button-icon-second {
   stroke: var(--accent-color);
-
-  button:hover & {
-    stroke: var(--white-text-color);
-  }
 }
