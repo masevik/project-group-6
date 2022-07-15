@@ -45,11 +45,11 @@
 }
 
 .contacts-section__category--orange {
-  background-color: #f0d1a5;
+  background-color: var(--category-main-color);
 }
 
 .contacts-section__category--green {
-  background-color: #c2e297;
+  background-color: var(--category-second-color);
 }
 
 .contacts-section__city {
@@ -63,11 +63,11 @@
   font-style: normal;
   line-height: 1.5;
   color: var(--second-text-color);
-  margin-bottom: 24px;
 }
 
 .line {
   border: 1px solid #e1e1e1;
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 
@@ -87,13 +87,47 @@
   color: var(--second-text-color);
   font-style: normal;
   line-height: 1.5;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.contacts-section__btn {
+.contacts-section__btn-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 161px;
-  height: 44px;
   justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.contacts-section_button {
+  width: 162px;
+  padding: 0px 18px;
+  align-items: center;
+}
+
+.contacts-section_button-second {
+  background-color: var(--white-text-color);
+  width: 162px;
+  padding: 0px 32px;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+  }
+}
+
+.contacts-section_button-icon-second {
+  stroke: var(--accent-color);
+
+  button:hover & {
+    stroke: var(--white-text-color);
+  }
 }
