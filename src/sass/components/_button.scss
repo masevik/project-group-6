@@ -7,21 +7,16 @@
   height: 44px;
   border: none;
   border-radius: 22px;
-  box-shadow: var(--button-shadow);
   cursor: pointer;
   @include font(16px, 700, 1.3);
   color: var(--accent-color);
   outline: none;
   transition: background-color var(--transition-function),
-    box-shadow var(--transition-function), color var(--transition-function);
+    color var(--transition-function);
 
   &:hover,
   &:focus {
     background-color: #ecebeb;
-  }
-
-  &:active {
-    box-shadow: none;
   }
 
   &.current {
@@ -36,5 +31,11 @@
 }
 
 .button__icon {
-  fill: currentColor;
+  stroke: var(--white-text-color);
+
+  transition: stroke var(--transition-function);
+
+  button:hover & {
+    stroke: var(--accent-color);
+  }
 }
