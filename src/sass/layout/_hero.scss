@@ -18,11 +18,13 @@
   background-color: var(--contrast-bg-color);
 }
 
-.hero_icecream {
+.hero__icecream {
   position: absolute;
   top: 0;
   left: 119px;
   transform: translateY(9px);
+  min-width: 171px;
+  min-height: 410px;
 }
 
 .hero__wrapper {
@@ -70,6 +72,9 @@
   color: var(--white-text-color);
 
   &:hover {
+    background-color: #ef5b7f;
+
+    transition: background-color var(--transition-function);
   }
 }
 
@@ -78,5 +83,8 @@
   color: var(--accent-color);
 
   &:hover {
+    background-color: #ecebeb;
+
+    transition: background-color var(--transition-function);
   }
 }
