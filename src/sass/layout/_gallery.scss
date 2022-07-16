@@ -10,9 +10,23 @@
   background: linear-gradient(to bottom, #fff5f6 19.8%, #ffff 19.8%, #ffff);
 }
 
-.container {
+.grid-wrap {
   padding-left: 0px;
   padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .grid {
@@ -36,14 +50,14 @@
   margin-top: 8px;
 }
 
-.wrap--second {
+.wrap-second {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 4;
 }
 
-.wrap--third {
+.wrap-third {
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 1;
@@ -51,7 +65,7 @@
   margin-top: 12px;
 }
 
-.wrap--fourth {
+.wrap-fourth {
   grid-column-start: 6;
   grid-column-end: 7;
   grid-row-start: 1;
@@ -59,7 +73,7 @@
   margin-bottom: -1px;
 }
 
-.wrap--fifth {
+.wrap-fifth {
   grid-column-start: 7;
   grid-column-end: 8;
   grid-row-start: 1;
@@ -67,11 +81,11 @@
   margin-top: 4px;
 }
 
-.gallery__img--margin {
+.gallery__img-margin {
   margin-top: 2.5px;
 }
 
-.gallery__img--marginsmall {
+.grid__item-marginsmall {
   margin-top: 1.89px;
 }
 
