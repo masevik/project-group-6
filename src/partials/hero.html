@@ -1,7 +1,9 @@
 <section class="hero">
-  <div class="container hero__container">
+  <div class="container">
+    <!--   Central background-color   -->
     <div class="hero__bg"></div>
-    <picture class="hero__icecream">
+    <!--   Icecream   -->
+    <picture>
       <source
         srcset="./images/heroicecream.png 1x, ./images/heroicecream-2x.png 2x"
         media="(min-width: 1200px)"
@@ -24,12 +26,14 @@
         type="image/png"
       />
       <img
+        class="hero__icecream"
         src="./images/heroicecream.png"
         alt="icecream"
         width="171"
         height="410"
       />
     </picture>
+    <!--   Milk   -->
     <div class="hero__wrapper">
       <h1 class="hero__title">
         ice cream
@@ -50,6 +54,71 @@
           >
         </li>
       </ul>
+      <div class="hero__milk-wrapper">
+        <picture>
+          <source
+            srcset="./images/heromilk.png 1x, ./images/heromilk-2x.png 2x"
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/heromilk-tab.png    1x,
+              ./images/heromilk-tab-2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img
+            class="hero__milk"
+            src="./images/heromilk.png"
+            alt="milk"
+            width="152"
+            height="154"
+          />
+        </picture>
+        <a href="" class="hero__milk-link link">
+          <p class="hero__milk-text">
+            We using special milk processing technology. Feel a delicate creamy
+            taste of your favorite ice cream.
+          </p>
+          <button type="button" class="hero__milk-btn">
+            <svg width="8" height="8" class="hero__milk-btn-icon">
+              <use href="./images/icons.svg#icon-right-arrow-svg"></use>
+            </svg>
+          </button>
+        </a>
+      </div>
+    </div>
+    <!--   Quantity   -->
+    <div class="hero__quantity-bg-first"></div>
+    <div class="hero__quantity-bg-second"></div>
+    <div class="quantity">
+      <div class="quantity__wrapper">
+        <h2 class="quantity__title">16</h2>
+        <p class="quantity__text">cafes</p>
+      </div>
+      <div class="quantity__wrapper">
+        <h2 class="quantity__title">23</h2>
+        <p class="quantity__text">food trucks</p>
+      </div>
+    </div>
+    <!--   Girl   -->
+    <div>
+      <picture>
+        <source
+          srcset="./images/herogirl.png 1x, ./images/herogirl-2x.png 2x"
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/herogirl-tab.png 1x, ./images/herogirl-tab-2x.png 2x"
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <img class="hero__girl"" src="./images/herogirl.png" alt="girl with
+        icecream" width="190" height="150" />
+      </picture>
     </div>
   </div>
 </section>
