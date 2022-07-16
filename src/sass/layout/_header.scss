@@ -1,15 +1,17 @@
 .header {
     background: #FFB8CA;
-}
-
-.header__container {
     position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 .header__logo {
     margin: 8px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 320px){
+        display: block;
+        margin: 10px;
+        width: 70%;
+    }
 }

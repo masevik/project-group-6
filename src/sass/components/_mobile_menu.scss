@@ -1,14 +1,12 @@
 .menu__button {
 
     position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
 
     cursor: pointer;
-    display: inline-flex;
     margin: 0;
-    padding: 0;
+    padding: 27px 20px;
     border: none;
     background-color: transparent;
 
