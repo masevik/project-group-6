@@ -1,0 +1,69 @@
+.advantages__number {
+  margin-bottom: 4px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+}
+.advantages__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #000000;
+}
+.advantages {
+  background: #fff5f6;
+  padding-bottom: 60px;
+}
+.advantages__list:not(:last-child) {
+  margin-bottom: 16px;
+}
+.advantages__list {
+  list-style: none;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 180px 162px 159px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 180px 162px 159px;
+  }
+}
+.advantages__container {
+  display: inline-grid;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+.advantages__container::before {
+  content: '';
+  margin-bottom: 16px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/cowicon2-2x-min.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
