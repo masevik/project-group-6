@@ -10,19 +10,19 @@
         >
       </a>
       <!-- Кнопка бургер -->
-      <button
-        type="button"
-        class="menu__button"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-        data-modal-open
-      >
+      <button type="button" class="menu__button" aria-expanded="false"
+        aria-controls="mobile-menu" data-modal-open>
         <svg width="20px" height="12px" aria-label="Мобільне меню">
-          <use
-            class="menu__icon--burger"
-            href="./images/icons.svg#icon-burger"
-          ></use>
+          <use class="menu__icon--burger"
+            href="./images/icons.svg#icon-burger"></use>
         </svg>
+      </button>
+      <!-- Кнопка "Buy now" -->
+      <button class="buy-button button" type="button" name="buy-button" data-modal-open>
+              <span>Buy now </span>
+              <svg class="buy-button-icon" width="6" height="9">
+                <use href="./images/icons.svg#icon-buttonsvg"></use>
+              </svg>
       </button>
       <!-- Меню -->
       <div class="mobile-menu" id="mobile-menu" data-modal>
@@ -48,9 +48,9 @@
           </button>
           
           <div class="navigation__container">
-            <button class="navigation__btn button" type="button" name="buy-now" data-modal-open>
+            <button class="navigation__buy-btn button" type="button" name="menu-buy-button" data-modal-open>
               <span>Buy now</span>
-              <svg class="navigation__btn-icon" width="6" height="9">
+              <svg class="navigation__buy-btn-icon" width="6" height="9">
                 <use href="./images/icons.svg#icon-buttonsvg"></use>
               </svg>
             </button>

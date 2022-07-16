@@ -111,10 +111,7 @@ body {
 }
 
 .navigation__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-top: 123px;
 }
 
 .navigation__item {
@@ -128,14 +125,12 @@ body {
   position: relative;
   display: block;
   text-decoration: none;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 20px;
+  padding: 11px 20px;
   font-family: "DM Sans";
   font-style: normal;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
+  font-weight: 700;
+  line-height: 1.29;
   display: flex;
   align-items: center;
   color: #fff;
@@ -149,12 +144,15 @@ body {
   color: var(--accent-color);
 }
 
-.navigation__btn {
-  margin: 60px 20px 20px;
+.navigation__buy-btn {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
 }
 
-.navigation__btn-icon {
+.navigation__buy-btn-icon {
   stroke: #D41443;
 }
 
@@ -167,6 +165,12 @@ body {
   padding: 27px 20px;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    top: 24px;
+    right: 204px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu__button {
@@ -328,6 +332,10 @@ button:hover .button__icon {
   position: relative;
 }
 
+.header_container {
+  position: fixed;
+}
+
 .header__logo {
   margin: 8px 20px;
   position: absolute;
@@ -340,6 +348,34 @@ button:hover .button__icon {
     margin: 10px;
     width: 70%;
   }
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 32px;
+    left: 32px;
+  }
+}
+
+.buy-button {
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 160px;
+  padding: 0;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .buy-button {
+    display: block;
+  }
+}
+
+.buy-button-icon {
+  stroke: #D41443;
 }
 
 .hero {
