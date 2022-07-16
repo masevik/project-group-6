@@ -1,0 +1,173 @@
+.customers-clients-1,
+.customers-clients-2,
+.customers-clients-3 {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.customers-clients-1 {
+  background-image: url('../images/reviewer1.png');
+}
+
+.customers-clients-2 {
+  background-image: url('../images/reviewer2.png');
+}
+
+.customers-clients-3 {
+  background-image: url('../images/reviewer3.png');
+}
+
+.customers-text-container {
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    min-height: 100%;
+    padding: 37px 55px 44px 51px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    min-height: 100%;
+    padding: 47px auto 39px;
+  }
+
+  width: 280px;
+  min-height: 100%;
+  background-color: #fafafa;
+  padding: 30px 50px 17px;
+  margin: 0 auto;
+}
+
+// Поправить
+// .customers-text-svg {
+//   fill: #e1e1e1;
+//   margin-right: -13px;
+// }
+
+.customers__quotes {
+  // background-color: #fff;
+  max-width: 180px;
+  min-height: 261px;
+  padding: 13px 8px 0px 15px;
+  background-image: url('../images/lapki.png');
+  background-repeat: no-repeat;
+  // background: repeating-linear-gradient(#fff 30px, #000 1px);
+
+  @media screen and (min-width: 768px) {
+    max-width: 608px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 821px;
+  }
+}
+
+// .customers__lines {
+//   max-width: 180px;
+//   height: 100%;
+// }
+
+.customers-text {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+  }
+
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  // background-repeat: no-repeat;
+  // background-position: center bottom 1px;
+  // background-size: 100% 1px;
+  // background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
+}
+
+.customers-svg {
+  fill: #c7133e;
+  margin: 0 auto;
+  display: block;
+}
+
+.customers-place {
+  font-size: 14px;
+  line-height: 1.85;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.customers-item {
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+}
+
+.customers-items {
+  margin-right: 18px;
+}
+
+.customers-svg-home {
+  fill: #d9d9d9;
+}
+
+.customers-svg-frame {
+  fill: #d9d9d9;
+}
+
+.svg-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.svg:not(:last-child) {
+  fill: #c7133e;
+  margin-right: 18px;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url('../images/Frame.jpg');
+  border-radius: 0%;
+}
+
+.swiper-pagination {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    justify-content: center;
+  }
+  position: relative;
+  margin-right: 18px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-right: 18px;
+}
