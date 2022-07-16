@@ -1,15 +1,23 @@
 .contacts-section {
   background-image: linear-gradient(
     to bottom,
-    var(--white-background-color) 25%,
-    var(--second-background-color) 15%
+    var(--white-background-color) 22%,
+    var(--second-background-color) 22%
   );
 
   @include tablet {
     background-image: linear-gradient(
       to bottom,
-      var(--white-background-color) 55%,
-      var(--second-background-color) 15%
+      var(--white-background-color) 49%,
+      var(--second-background-color) 49%
+    );
+  }
+
+  @include desktop {
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-background-color) 17%,
+      var(--second-background-color) 17%
     );
   }
 }
@@ -39,6 +47,7 @@
   }
 
   @include desktop {
+    padding: 40px 40px;
     width: 368px;
   }
 }
@@ -53,6 +62,10 @@
   padding: 0px 26px;
   display: inline-block;
   margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
 
 .contacts-section__category--orange {
@@ -68,6 +81,14 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 12px;
+  }
+
+  @include desktop {
+    margin-bottom: 8px;
+  }
 }
 
 .contacts-section__text {
@@ -80,6 +101,11 @@
   border: 1px solid #e1e1e1;
   margin-top: 24px;
   margin-bottom: 24px;
+
+  @include tablet {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .contacts-info-list__days {
@@ -91,8 +117,16 @@
   color: #ffa5ba;
   font-style: normal;
   line-height: 1.83;
-  margin-bottom: 8px;
 }
+
+.contacts-info-list__times--paddings {
+  margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 12px;
+  }
+}
+
 .contacts-section__tel,
 .contacts-section__email {
   display: block;
@@ -115,6 +149,11 @@
 
   @include tablet {
     flex-direction: row;
+    gap: 15px;
+  }
+
+  @include desktop {
+    gap: 12px;
   }
 }
 
@@ -122,6 +161,14 @@
   width: 162px;
   padding: 0px 18px;
   align-items: center;
+
+  @include tablet {
+    width: 192px;
+  }
+
+  @include desktop {
+    width: 198px;
+  }
 }
 
 .contacts-section_button-second {
@@ -129,6 +176,14 @@
   width: 162px;
   padding: 0px 32px;
   align-items: center;
+
+  @include tablet {
+    width: 174px;
+  }
+
+  @include desktop {
+    width: 168px;
+  }
 }
 
 .contacts-section_button-icon-second {
