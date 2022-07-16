@@ -1,7 +1,7 @@
 <section class="hero">
-  <div class="container hero__container">
+  <div class="container">
     <div class="hero__bg"></div>
-    <picture class="hero__icecream">
+    <picture>
       <source
         srcset="./images/heroicecream.png 1x, ./images/heroicecream-2x.png 2x"
         media="(min-width: 1200px)"
@@ -24,6 +24,7 @@
         type="image/png"
       />
       <img
+        class="hero__icecream"
         src="./images/heroicecream.png"
         alt="icecream"
         width="171"
@@ -50,6 +51,41 @@
           >
         </li>
       </ul>
+      <div class="hero__milk-wrapper">
+        <picture>
+          <source
+            srcset="./images/heromilk.png 1x, ./images/heromilk-2x.png 2x"
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/heromilk-tab.png    1x,
+              ./images/heromilk-tab-2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img
+            class="hero__milk"
+            src="./images/heromilk.png"
+            alt="icecream"
+            width="152"
+            height="154"
+          />
+        </picture>
+        <a href="" class="hero__milk-link link">
+          <p class="hero__milk-text">
+            We use special milk processing technology. Feel a delicate creamy
+            taste of your favorite ice cream.
+          </p>
+          <button type="button" class="hero__milk-btn">
+            <svg width="6" height="6">
+              <use href="./images/icons.svg#icon-buttonsvg"></use>
+            </svg>
+          </button>
+        </a>
+      </div>
     </div>
   </div>
 </section>
