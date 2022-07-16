@@ -154,20 +154,13 @@
 }
 
 .swiper-pagination {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    justify-content: center;
-  }
   position: relative;
-  margin-right: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
 }
 
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-}
-
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  margin-right: 18px;
 }
