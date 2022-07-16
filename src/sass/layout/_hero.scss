@@ -270,13 +270,18 @@
 /*-------Quantity----------*/
 
 .hero__quantity-bg-first {
-  position: absolute;
-  top: 92px;
-  right: 32px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: var(--white-background-color);
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 92px;
+    right: 32px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--white-background-color);
+  }
 
   @include desktop {
     top: 152px;
@@ -287,13 +292,18 @@
 }
 
 .hero__quantity-bg-second {
-  position: absolute;
-  top: 152px;
-  right: 32px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: var(--white-background-color);
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 152px;
+    right: 32px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--white-background-color);
+  }
 
   @include desktop {
     top: 244px;
