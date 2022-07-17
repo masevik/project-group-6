@@ -11,9 +11,8 @@
     top: 0;
     left: 0;
 
-    @media screen and (max-width: 320px){
+    @media screen and (max-width: 319px){
         display: block;
-        margin: 10px;
         width: 70%;
     }
         @include tablet {
