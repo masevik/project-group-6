@@ -1,0 +1,41 @@
+.modal {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px 15px 10px;
+}
+.modal__content {
+  min-height: 500px;
+  border-radius: 25% 25% 25% 25% / 20% 20% 20% 20%;
+  padding: 30px 15px 30px 15px;
+  width: 100%;
+  max-width: 450px;
+  background-color: whitesmoke;
+}
+.modal__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 20px;
+}
+.modal__text1 {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 10px;
+}
+.modal__text {
+  line-height: 1.15;
+}
