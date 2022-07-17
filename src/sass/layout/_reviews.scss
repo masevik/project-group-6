@@ -62,28 +62,6 @@
   }
 }
 
-// .customers__quotes {
-//   width: 57px;
-//   height: 40px;
-//   background-image: url('../images/lapki.png');
-//   background-repeat: no-repeat;
-//   background-position: 3px 0px;
-// }
-
-// .customers__lines {
-//   position: absolute;
-//   top: 75px;
-//   width: 180px;
-//   height: 100%;
-//   background: repeating-linear-gradient(
-//     to top,
-//     #e1e1e1,
-//     #e1e1e1 1px,
-//     transparent 1px,
-//     transparent 31px
-//   );
-// }
-
 .customers-text {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-weight: 500;
