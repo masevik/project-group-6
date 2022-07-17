@@ -54,6 +54,8 @@
   width: 171px;
   height: 410px;
 
+  animation: zoomIn 3s linear 1, heartBeat 3s 1 2s;
+
   @include tablet {
     max-width: 143px;
     max-height: 336px;
@@ -94,6 +96,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--white-text-color);
+  animation: fadeInLeft 2s, move-text 1.4s linear infinite alternate 3s;
 
   @include tablet {
     @include font(22px, null, 1.136);
@@ -104,6 +107,10 @@
 
     @include font(38px, null, 1.158);
   }
+}
+
+.hero__title-union {
+  display: flex;
 }
 
 .hero__title-contrast {
@@ -120,10 +127,39 @@
   }
 }
 
+.one {
+  animation: change-color 0.8s linear infinite alternate 2.1s;
+}
+
+.two {
+  animation: change-color 0.8s linear infinite alternate 2.3s;
+}
+
+.three {
+  animation: change-color 0.8s linear infinite alternate 2.5s;
+}
+
+.four {
+  animation: change-color 0.8s linear infinite alternate 2.7s;
+}
+
+.five {
+  animation: change-color 0.8s linear infinite alternate 2.9s;
+}
+
+.six {
+  animation: change-color 0.8s linear infinite alternate 3.1s;
+}
+
+.seven {
+  animation: change-color 0.8s linear infinite alternate 3.3s;
+}
+
 /*-------Buttons----------*/
 
 .hero__list {
   display: flex;
+  animation: fadeInLeft 2.5s linear 1;
 }
 
 .hero__item {
@@ -211,6 +247,8 @@
   width: 152px;
   height: 154px;
 
+  animation: fadeInUp 2.5s, tada 2s 2 5s;
+
   @include desktop {
     width: 213px;
     height: 216px;
@@ -238,6 +276,8 @@
 }
 
 .hero__milk-link {
+  animation: fadeInUp 3.5s;
+
   @include tablet {
     &:hover .hero__milk-btn-icon,
     &:focus .hero__milk-btn-icon {
@@ -326,6 +366,8 @@
     position: absolute;
     top: 94px;
     right: 42px;
+
+    animation: fadeInRight 3s;
   }
 
   @include desktop {
@@ -379,6 +421,8 @@
     right: 32px;
     width: 190px;
     height: 150px;
+
+    animation: fadeInUp 2.5s;
   }
 
   @include desktop {

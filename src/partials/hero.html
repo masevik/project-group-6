@@ -1,4 +1,5 @@
 <section class="hero">
+  <div id="preloader">Team</div>
   <div class="container hero__container">
     <!--   Central background-color   -->
     <div class="hero__bg"></div>
@@ -40,7 +41,15 @@
         <br />
         made with
         <br />
-        <span class="hero__title-contrast">passion</span>
+        <div class="hero__title-union">
+          <span class="hero__title-contrast one">p</span>
+          <span class="hero__title-contrast two">a</span>
+          <span class="hero__title-contrast three">s</span>
+          <span class="hero__title-contrast four">s</span>
+          <span class="hero__title-contrast five">i</span>
+          <span class="hero__title-contrast six">o</span>
+          <span class="hero__title-contrast seven">n</span>
+        </div>
       </h1>
       <ul class="hero__list list">
         <li class="hero__item">
@@ -126,4 +135,10 @@
       </picture>
     </div>
   </div>
+  <script>
+    var loader = document.getElementById('preloader');
+    window.addEventListener('load', function () {
+      loader.style.display = 'none';
+    });
+  </script>
 </section>

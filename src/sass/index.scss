@@ -5,6 +5,7 @@
 @import './base/reset';
 @import './base/common';
 
+@import './components/preloader';
 @import './components/section';
 @import './components/container';
 @import './components/navigation';
@@ -16,6 +17,7 @@
 @import './components/backdrop';
 @import './components/modal';
 @import './components/scrollbar';
+@import './components/animation';
 
 @import './layout/header';
 @import './layout/hero';
