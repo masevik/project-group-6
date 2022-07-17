@@ -1,15 +1,42 @@
 .header {
     background: #FFB8CA;
-}
-
-.header__container {
     position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
-
+.header_container{
+    position: fixed;
+}
 .header__logo {
     margin: 8px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 319px){
+        display: block;
+        width: 70%;
+    }
+        @include tablet {
+            display: block;
+            position: absolute;
+            margin: 0;
+            top: 32px;
+            left: 32px;
+        }
+}
+.buy-button {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 160px;
+    padding: 0;
+    background-color: #fff;
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.buy-button-icon {
+    stroke: #D41443;
 }
