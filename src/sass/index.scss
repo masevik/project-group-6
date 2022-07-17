@@ -1,11 +1,11 @@
+@import 'bootstrap/scss/bootstrap';
+
 @import './utils/visually-hidden';
 @import './utils/variables';
 @import './utils/mixins';
 
 @import './base/reset';
 @import './base/common';
-
-@import "bootstrap/scss/bootstrap";
 
 @import './components/section';
 @import './components/container';
