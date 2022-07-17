@@ -30,37 +30,29 @@
 .customers-text-container {
   @media screen and (min-width: 768px) {
     width: 620px;
-    min-height: 100%;
+    height: 100%;
     padding: 37px 55px 44px 51px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 968px;
-    min-height: 100%;
+    height: 100%;
     padding: 47px auto 39px;
   }
 
+  position: relative;
   width: 280px;
-  min-height: 100%;
+  height: 100%;
   background-color: #fafafa;
   padding: 30px 50px 17px;
   margin: 0 auto;
 }
 
-// Поправить
-// .customers-text-svg {
-//   fill: #e1e1e1;
-//   margin-right: -13px;
-// }
-
-.customers__quotes {
-  // background-color: #fff;
+.customers__wrap {
+  // position: relative;
+  background-color: #fff;
   max-width: 180px;
-  min-height: 261px;
-  padding: 13px 8px 0px 15px;
-  background-image: url('../images/lapki.png');
-  background-repeat: no-repeat;
-  // background: repeating-linear-gradient(#fff 30px, #000 1px);
+  min-height: 100%;
 
   @media screen and (min-width: 768px) {
     max-width: 608px;
@@ -69,11 +61,6 @@
     max-width: 821px;
   }
 }
-
-// .customers__lines {
-//   max-width: 180px;
-//   height: 100%;
-// }
 
 .customers-text {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -85,16 +72,26 @@
   @media screen and (min-width: 320px) and (max-width: 767px) {
     font-weight: 500;
     font-size: 12px;
-    line-height: 2.55;
+    line-height: 2.5;
   }
 
+  width: 180px;
+  height: 100%;
   font-size: 12px;
-  line-height: 2.55;
+  line-height: 2.5;
   text-align: center;
-  // background-repeat: no-repeat;
-  // background-position: center bottom 1px;
-  // background-size: 100% 1px;
-  // background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
+  padding: 13px 8px 0px 15px;
+  background: url('../images/lapki.png') no-repeat,
+    linear-gradient(to bottom, #fafafa 40px, transparent 40px),
+    repeating-linear-gradient(
+      to top,
+      #e1e1e1,
+      #e1e1e1 1px,
+      #fafafa 1px,
+      #fafafa 30px
+    );
+  background-position: 3px 0px, 0px 0px;
+  // outline: 1px solid black;
 }
 
 .customers-svg {
