@@ -1,13 +1,17 @@
 .navigation {
-    position: relative;
     width: 100%;
 }
 
 .navigation__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding-top: 123px;
+
+//  @include desktop{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//  }
+    
 }
 
 .navigation__item {
@@ -23,16 +27,12 @@
 
     text-decoration: none;
 
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 20px;
-
-
+    padding: 11px 20px;
+    
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
+
+    @include font(14px, 700, 1.29);
     display: flex;
     align-items: center;
 
@@ -49,11 +49,14 @@
     color: var(--accent-color);
 }
 
-.navigation__btn{
-    margin: 60px 20px 20px;
+.navigation__buy-btn{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #fff;
 }
 
-.navigation__btn-icon{
+.navigation__buy-btn-icon{
     stroke: #D41443;
 }
