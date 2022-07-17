@@ -40,15 +40,18 @@
   padding: 40px 32px;
   box-shadow: var(--button-shadow);
   border-radius: 24px;
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
 
   @include tablet {
-    width: 224px;
+    max-width: 224px;
+    width: 100%;
   }
 
   @include desktop {
+    max-width: 368px;
+    width: 100%;
     padding: 40px 40px;
-    width: 368px;
   }
 }
 
@@ -64,6 +67,8 @@
   margin-bottom: 20px;
 
   @include tablet {
+    font-size: 16px;
+    line-height: 1.88;
     margin-bottom: 32px;
   }
 }
@@ -83,10 +88,14 @@
   margin-bottom: 8px;
 
   @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
     margin-bottom: 12px;
   }
 
   @include desktop {
+    font-size: 16px;
+    line-height: 1.88;
     margin-bottom: 8px;
   }
 }
@@ -95,6 +104,16 @@
   font-style: normal;
   line-height: 1.5;
   color: var(--second-text-color);
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 
 .line {
@@ -108,15 +127,24 @@
   }
 }
 
-.contacts-info-list__days {
+.contacts-info-list__days,
+.contacts-info-list__times {
   font-style: normal;
   line-height: 1.83;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 
 .contacts-info-list__times {
-  color: #ffa5ba;
-  font-style: normal;
-  line-height: 1.83;
+  color: var(--contrast-bg-color);
 }
 
 .contacts-info-list__times--paddings {
@@ -137,6 +165,16 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.88;
   }
 }
 
