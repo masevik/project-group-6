@@ -63,16 +63,26 @@
 }
 
 .customers-text {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 14px;
     line-height: 2.14;
     letter-spacing: 0.04em;
+    min-width: 620px;
   }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+
+  @media screen and (min-width: 320px) {
     font-weight: 500;
     font-size: 12px;
     line-height: 2.5;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9em;
+    letter-spacing: 0.04em;
+    min-width: 968px;
   }
 
   width: 180px;
@@ -82,15 +92,14 @@
   text-align: center;
   padding: 13px 8px 0px 15px;
   background: url('../images/lapki.png') no-repeat,
-    linear-gradient(to bottom, #fafafa 40px, transparent 40px),
-    repeating-linear-gradient(
-      to top,
-      #e1e1e1,
-      #e1e1e1 1px,
-      #fafafa 1px,
-      #fafafa 30px
-    );
-  background-position: 3px 0px, 0px 0px;
+  linear-gradient(to bottom, #fafafa 40px, transparent 40px),
+  repeating-linear-gradient(to top,
+    #e1e1e1,
+    #e1e1e1 1px,
+    #fafafa 1px,
+    #fafafa 30px);
+  background-position: 3px 0px,
+  0px 0px;
   // outline: 1px solid black;
 }
 
