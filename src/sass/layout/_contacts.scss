@@ -231,3 +231,9 @@
 .contacts-section_button-icon-second {
   stroke: var(--accent-color);
 }
+
+.modal-dialog__iframe {
+  max-width: 466px;
+  width: 100%;
+  height: 270px;
+}
