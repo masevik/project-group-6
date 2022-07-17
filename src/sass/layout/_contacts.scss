@@ -32,6 +32,7 @@
   @include tablet {
     flex-direction: row;
     gap: 32px;
+    margin-bottom: 60px;
   }
 }
 
@@ -101,16 +102,19 @@
 }
 
 .contacts-section__text {
+  max-width: 179px;
   font-style: normal;
   line-height: 1.5;
   color: var(--second-text-color);
 
   @include tablet {
+    max-width: 159px;
     font-size: 14px;
     line-height: 1.86;
   }
 
   @include desktop {
+    max-width: 250px;
     font-size: 16px;
     line-height: 1.88;
   }
