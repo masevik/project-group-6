@@ -6,6 +6,7 @@
   position: fixed;
   z-index: 9999;
   text-align: center;
+  font-family: 'Titan One', arial;
   @include font(100px, 900, 1.5);
   padding-top: 100px;
 }

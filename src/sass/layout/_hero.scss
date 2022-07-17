@@ -2,17 +2,15 @@
   width: 100vw;
   height: 502px;
   background-color: var(--main-background-color);
-  overflow-x: hidden;
+  overflow: hidden;
   border: none;
 
   @include tablet {
-    /*width: 768px;*/
     height: 416px;
     margin: 0 auto;
   }
 
   @include desktop {
-    /*width: 1200px;*/
     height: 664px;
   }
 }
@@ -54,7 +52,7 @@
   width: 171px;
   height: 410px;
 
-  animation: zoomIn 3s linear 1, heartBeat 3s 1 2s;
+  animation: zoomIn 3s linear 1;
 
   @include tablet {
     max-width: 143px;
