@@ -18,13 +18,16 @@
     @include tablet {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+
+    
 
     }
 
     @include desktop {
 
         margin-bottom: 60px;
+        align-items: flex-end;
     }
   }
     
