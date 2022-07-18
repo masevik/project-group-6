@@ -4,6 +4,10 @@
   @include tablet {
     background: linear-gradient(to bottom, #fff5f6 57.18%, #ffff 57.18%, #ffff);
   }
+
+  @include desktop {
+    background: linear-gradient(to bottom, #fff5f6 19.8%, #ffff 19.8%, #ffff);
+  }
 }
 
 .container {
@@ -44,6 +48,10 @@
   @include tablet {
     margin-top: 12px;
   }
+
+  @include desktop {
+    margin-top: 24px;
+  }
 }
 
 .wrap--second {
@@ -63,6 +71,10 @@
   @include tablet {
     margin-top: 21px;
   }
+
+  @include desktop {
+    margin-top: 36px;
+  }
 }
 
 .wrap--fourth {
@@ -75,6 +87,10 @@
   @include tablet {
     margin-bottom: 26px;
   }
+
+  @include desktop {
+    margin-bottom: 5px;
+  }
 }
 
 .wrap--fifth {
@@ -86,6 +102,10 @@
 
   @include tablet {
     margin-bottom: 7.5px;
+  }
+
+  @include desktop {
+    margin-top: 13px;
   }
 }
 
