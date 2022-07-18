@@ -1,3 +1,5 @@
+@import 'bootstrap/scss/bootstrap';
+
 @import './utils/visually-hidden';
 @import './utils/variables';
 @import './utils/mixins';
@@ -5,6 +7,7 @@
 @import './base/reset';
 @import './base/common';
 
+@import './components/preloader';
 @import './components/section';
 @import './components/container';
 @import './components/navigation';
@@ -16,6 +19,7 @@
 @import './components/backdrop';
 @import './components/modal';
 @import './components/scrollbar';
+@import './components/animation';
 
 @import './layout/header';
 @import './layout/hero';
@@ -23,5 +27,6 @@
 @import './layout/about';
 @import './layout/advantages';
 @import './layout/gallery';
+@import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
