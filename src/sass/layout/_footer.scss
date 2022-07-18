@@ -2,6 +2,10 @@
     padding: 0;
     padding-top: 40px;
     background-color: var(--second-background-color);
+
+    @include desktop {
+        padding-top: 60px;
+    }
     
 
 }
@@ -16,6 +20,11 @@
         justify-content: space-between;
         align-items: center;
 
+    }
+
+    @include desktop {
+
+        margin-bottom: 60px;
     }
   }
     
@@ -53,10 +62,12 @@
 
             @include tablet {
                 font-size: 26px;
+                margin-bottom: 12px;
             }
             
             @include desktop {
                 font-size: 30px;
+                margin-bottom: 16px;
             }
            
             }
@@ -141,6 +152,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    @include desktop {
+        padding-top: 7px;
+        padding-bottom: 4px;
+        
     }
 }
     
