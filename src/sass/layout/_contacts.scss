@@ -19,6 +19,7 @@
       var(--white-background-color) 17%,
       var(--second-background-color) 17%
     );
+    padding-bottom: 60px;
   }
 }
 
@@ -28,11 +29,16 @@
   align-items: center;
   gap: 20px;
   margin-bottom: 32px;
+  margin-top: 40px;
 
   @include tablet {
     flex-direction: row;
     gap: 32px;
     margin-bottom: 60px;
+  }
+
+  @include desktop {
+    margin-top: 60px;
   }
 }
 
