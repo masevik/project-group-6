@@ -1,13 +1,13 @@
-// .grid {
-//   display: grid;
-//   grid-template-columns: 43.59px 43.59px 43.59px 43.59px 43.59px 43.59px 43.59px;
-//   grid-template-rows: 43.8px 43.8px 43.8px;
-//   grid-gap: 2.5px;
-//   align-items: center;
-// }
-
 .gallery {
   background: linear-gradient(to bottom, #fff5f6 19.8%, #ffff 19.8%, #ffff);
+
+  @include tablet {
+    background: linear-gradient(to bottom, #fff5f6 57.18%, #ffff 57.18%, #ffff);
+  }
+
+  @include desktop {
+    background: linear-gradient(to bottom, #fff5f6 19.8%, #ffff 19.8%, #ffff);
+  }
 }
 
 .grid-wrap {
@@ -35,6 +35,16 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 2.5px;
   align-items: center;
+
+  @include tablet {
+    grid-gap: 6.07px;
+  }
+
+  @include desktop {
+    padding-left: 93px;
+    padding-right: 94px;
+    grid-gap: 8px;
+  }
 }
 
 .first {
@@ -48,6 +58,14 @@
   grid-row-start: 1;
   grid-row-end: 4;
   margin-top: 8px;
+
+  @include tablet {
+    margin-top: 12px;
+  }
+
+  @include desktop {
+    margin-top: 24px;
+  }
 }
 
 .wrap-second {
@@ -63,6 +81,14 @@
   grid-row-start: 1;
   grid-row-end: 4;
   margin-top: 12px;
+
+  @include tablet {
+    margin-top: 21px;
+  }
+
+  @include desktop {
+    margin-top: 36px;
+  }
 }
 
 .wrap-fourth {
@@ -71,6 +97,14 @@
   grid-row-start: 1;
   grid-row-end: 4;
   margin-bottom: -1px;
+
+  @include tablet {
+    margin-bottom: 26px;
+  }
+
+  @include desktop {
+    margin-bottom: 5px;
+  }
 }
 
 .wrap-fifth {
@@ -79,14 +113,42 @@
   grid-row-start: 1;
   grid-row-end: 4;
   margin-top: 4px;
+
+  @include tablet {
+    margin-bottom: 7.5px;
+  }
+
+  @include desktop {
+    margin-top: 13px;
+  }
+}
+
+.gallery__img {
+  @include desktop {
+  }
 }
 
 .gallery__img-margin {
   margin-top: 2.5px;
+
+  @include tablet {
+    margin-top: 6.05px;
+  }
+
+  @include desktop {
+    margin-top: 7.98px;
+  }
 }
 
 .grid__item-marginsmall {
   margin-top: 1.89px;
+  @include tablet {
+    margin-top: 4.54px;
+  }
+
+  @include desktop {
+    margin-top: 5.99px;
+  }
 }
 
 .hidden {

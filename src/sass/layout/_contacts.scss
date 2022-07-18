@@ -1,16 +1,25 @@
 .contacts-section {
   background-image: linear-gradient(
     to bottom,
-    var(--white-background-color) 25%,
-    var(--second-background-color) 15%
+    var(--white-background-color) 22%,
+    var(--second-background-color) 22%
   );
 
   @include tablet {
     background-image: linear-gradient(
       to bottom,
-      var(--white-background-color) 55%,
-      var(--second-background-color) 15%
+      var(--white-background-color) 49%,
+      var(--second-background-color) 49%
     );
+  }
+
+  @include desktop {
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-background-color) 17%,
+      var(--second-background-color) 17%
+    );
+    padding-bottom: 60px;
   }
 }
 
@@ -20,10 +29,16 @@
   align-items: center;
   gap: 20px;
   margin-bottom: 32px;
+  margin-top: 40px;
 
   @include tablet {
     flex-direction: row;
     gap: 32px;
+    margin-bottom: 60px;
+  }
+
+  @include desktop {
+    margin-top: 60px;
   }
 }
 
@@ -32,14 +47,18 @@
   padding: 40px 32px;
   box-shadow: var(--button-shadow);
   border-radius: 24px;
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
 
   @include tablet {
-    width: 224px;
+    max-width: 224px;
+    width: 100%;
   }
 
   @include desktop {
-    width: 368px;
+    max-width: 368px;
+    width: 100%;
+    padding: 40px 40px;
   }
 }
 
@@ -53,6 +72,12 @@
   padding: 0px 26px;
   display: inline-block;
   margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.88;
+    margin-bottom: 32px;
+  }
 }
 
 .contacts-section__category--orange {
@@ -68,31 +93,78 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
+    margin-bottom: 12px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.88;
+    margin-bottom: 8px;
+  }
 }
 
 .contacts-section__text {
+  max-width: 179px;
   font-style: normal;
   line-height: 1.5;
   color: var(--second-text-color);
+
+  @include tablet {
+    max-width: 159px;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @include desktop {
+    max-width: 250px;
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 
 .line {
   border: 1px solid #e1e1e1;
   margin-top: 24px;
   margin-bottom: 24px;
+
+  @include tablet {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 
-.contacts-info-list__days {
+.contacts-info-list__days,
+.contacts-info-list__times {
   font-style: normal;
   line-height: 1.83;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 
 .contacts-info-list__times {
-  color: #ffa5ba;
-  font-style: normal;
-  line-height: 1.83;
-  margin-bottom: 8px;
+  color: var(--contrast-bg-color);
 }
+
+.contacts-info-list__times--paddings {
+  margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 12px;
+  }
+}
+
 .contacts-section__tel,
 .contacts-section__email {
   display: block;
@@ -103,6 +175,16 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.88;
   }
 }
 
@@ -115,22 +197,54 @@
 
   @include tablet {
     flex-direction: row;
+    gap: 15px;
+  }
+
+  @include desktop {
+    gap: 12px;
   }
 }
 
-.contacts-section_button {
+.contacts-section__button {
   width: 162px;
   padding: 0px 18px;
   align-items: center;
+
+  @include tablet {
+    width: 192px;
+  }
+
+  @include desktop {
+    width: 198px;
+  }
 }
 
-.contacts-section_button-second {
+.contacts-section__button-second {
   background-color: var(--white-text-color);
   width: 162px;
   padding: 0px 32px;
   align-items: center;
+
+  @include tablet {
+    width: 174px;
+  }
+
+  @include desktop {
+    width: 168px;
+  }
 }
 
-.contacts-section_button-icon-second {
+.contacts-section__button-icon-second {
   stroke: var(--accent-color);
+}
+
+.modal-dialog__iframe {
+  max-width: 466px;
+  width: 100%;
+  height: 270px;
+}
+
+.modal-dialog__franchise {
+  text-indent: 20px;
+  text-align: justify;
 }

@@ -4,11 +4,11 @@
     <!-- Заголовок Contacts приховати -->
     <ul class="contacts-section__list list">
       <li class="contacts-section__item">
-        <p
+        <div
           class="contacts-section__category contacts-section__category--orange"
         >
           CAFE
-        </p>
+        </div>
         <p class="contacts-section__city">Chicago</p>
         <p class="contacts-section__text">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -17,7 +17,11 @@
         <ul class="contacts-info-list list">
           <li class="contacts-info-list__item">
             <p class="contacts-info-list__days">Monday - Friday</p>
-            <p class="contacts-info-list__times">06:00 AM - 10:00 PM</p>
+            <p
+              class="contacts-info-list__times contacts-info-list__times--paddings"
+            >
+              06:00 AM - 10:00 PM
+            </p>
           </li>
           <li>
             <p class="contacts-info-list__days">Saturday - Sunday</p>
@@ -46,7 +50,11 @@
         <ul class="contacts-info-list list">
           <li class="contacts-info-list__item">
             <p class="contacts-info-list__days">Monday - Friday</p>
-            <p class="contacts-info-list__times">06:00 AM - 10:00 PM</p>
+            <p
+              class="contacts-info-list__times contacts-info-list__times--paddings"
+            >
+              06:00 AM - 10:00 PM
+            </p>
           </li>
           <li>
             <p class="contacts-info-list__days">Saturday - Sunday</p>
@@ -75,7 +83,11 @@
         <ul class="contacts-info-list list">
           <li class="contacts-info-list__item">
             <p class="contacts-info-list__days">Monday - Friday</p>
-            <p class="contacts-info-list__times">06:00 AM - 10:00 PM</p>
+            <p
+              class="contacts-info-list__times contacts-info-list__times--paddings"
+            >
+              06:00 AM - 10:00 PM
+            </p>
           </li>
           <li>
             <p class="contacts-info-list__days">Saturday - Sunday</p>
@@ -92,16 +104,26 @@
       </li>
     </ul>
     <div class="contacts-section__btn-container">
-      <button type="button" class="button current contacts-section_button">
+      <button
+        type="button"
+        class="button current contacts-section__button"
+        data-bs-toggle="modal"
+        data-bs-target="#ourLocationModal"
+      >
         <span class="button__text"> Our Locations </span>
         <svg class="button__icon" width="6" height="9">
           <use href="./images/icons.svg#icon-buttonsvg"></use>
         </svg>
       </button>
-      <button type="button" class="button contacts-section_button-second">
+      <button
+        type="button"
+        class="button contacts-section__button-second"
+        data-bs-toggle="modal"
+        data-bs-target="#franchiseModal"
+      >
         <span class="button__text"> Franchise </span>
         <svg
-          class="button__icon contacts-section_button-icon-second"
+          class="button__icon contacts-section__button-icon-second"
           width="6"
           height="9"
         >
@@ -111,3 +133,73 @@
     </div>
   </div>
 </section>
+
+<!-- Our locations Modal -->
+
+<div
+  class="modal fade"
+  id="ourLocationModal"
+  tabindex="-1"
+  aria-labelledby="ourLocationModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ourLocationModalLabel">Our locations</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <iframe
+          class="modal-dialog__iframe"
+          src="https://www.google.com/maps/d/u/0/embed?mid=15HYA96VwwEzNLDqF5U8NtVngXaw9r40&ehbc=2E312F&z=3"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Franchise Modal -->
+
+<div
+  class="modal fade"
+  id="franchiseModal"
+  tabindex="-1"
+  aria-labelledby="franchiseModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="franchiseModalLabel">Franchise</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body modal-dialog__franchise">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+        dapibus mollis est, ut malesuada tortor ornare commodo. Morbi vitae enim
+        at ipsum euismod semper pretium ut urna. In hac habitasse platea
+        dictumst. Phasellus viverra bibendum nisl. Vivamus neque magna, aliquam
+        sit amet tincidunt molestie, hendrerit ac est. Maecenas gravida erat
+        malesuada commodo ornare. Vestibulum dictum justo justo, eget convallis
+        nisi scelerisque sit amet. Maecenas aliquam pretium neque, mattis
+        dignissim leo pulvinar et. Nullam quam felis, molestie vitae rutrum vel,
+        laoreet at nunc. Morbi in dolor eget metus tincidunt elementum nec eu
+        justo. Quisque lacinia odio ut ex lacinia, ut dictum quam ultricies. Nam
+        vehicula convallis mauris, finibus vestibulum ipsum maximus a. Phasellus
+        suscipit, ex et vulputate porta, ligula nisi sodales lectus, vitae
+        ullamcorper tellus lectus in lorem. Integer ac lorem ipsum. Vestibulum
+        imperdiet diam non orci egestas lobortis.
+      </div>
+    </div>
+  </div>
+</div>
