@@ -10,11 +10,15 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ef5c81;
+  background: linear-gradient(
+    to bottom,
+    var(--contrast-bg-color),
+    var(--accent-color)
+  );
   border-radius: 3px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ea2e5d;
+  background: linear-gradient(to bottom, #ea2e5d, var(--accent-color));
 }
