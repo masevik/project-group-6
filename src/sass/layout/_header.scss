@@ -1,9 +1,12 @@
 .header {
     background: #FFB8CA;
-    position: relative;
+    // position: relative;
 }
-.header_container{
-    position: fixed;
+.header__container{
+position: relative;
+
+padding-left: 0;
+padding-right: 0;
 }
 .header__logo {
     margin: 8px 20px;
@@ -22,21 +25,4 @@
             top: 32px;
             left: 32px;
         }
-}
-.buy-button {
-    display: none;
-    position: absolute;
-    top: 32px;
-    right: 32px;
-    width: 160px;
-    padding: 0;
-    background-color: #fff;
-
-    @include tablet {
-        display: block;
-    }
-}
-
-.buy-button-icon {
-    stroke: #D41443;
 }
