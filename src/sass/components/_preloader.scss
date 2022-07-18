@@ -1,12 +1,22 @@
-#preloader {
+#loading {
   background: var(--main-background-color);
   color: var(--accent-color);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 9999;
+  z-index: 1;
   text-align: center;
   font-family: 'Titan One', arial;
-  @include font(100px, 900, 1.5);
-  padding-top: 100px;
+  @include font(50px, 900, 1.5);
+  padding-top: 150px;
+
+  @include tablet {
+    @include font(70px, 900, 1.5);
+    padding-top: 80px;
+  }
+
+  @include tablet {
+    @include font(100px, 900, 1.5);
+    padding-top: 200px;
+  }
 }

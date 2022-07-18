@@ -1,4 +1,7 @@
-var loader = document.getElementById('preloader');
+//loader with javascript with custom time
+var loader = document.getElementById('loading');
 window.addEventListener('load', function () {
-  loader.style.display = 'none';
+  setTimeout(function () {
+    loader.style.display = 'none';
+  }, 2000);
 });
