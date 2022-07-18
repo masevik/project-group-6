@@ -6,13 +6,14 @@
 
     cursor: pointer;
     margin: 0;
-    padding: 25px 20px;
+    padding: 24px 20px;
     border: none;
     background-color: transparent;
     
     @include tablet{
         top: 24px;
         right: 204px;
+        z-index: 1;
     }
 
     @include desktop {
@@ -34,16 +35,15 @@
 
     transition: opacity 200ms linear, visibility 200ms linear;
 
-    @media screen and (min-width:1199.8px) {
+    @include desktop {
         opacity: 1;
         visibility: visible;
         pointer-events: initial;
         background: none;
+        position: absolute;
+        left:250px;
+        z-index: 1;
     }
-    // @include desktop{
-        
-
-    // }
 }
 
 .mobile-menu.is-open {
@@ -73,14 +73,17 @@
 
 @include desktop {
     position: absolute;
+    top:0;
+    left:0;
     display: flex;
 
     width: 550px;
     background: none;
     box-shadow: none;
     transition: none;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 50px;
+    transform: none;
+    // transform: translateX(-50%);
     height: auto;
 }
 
@@ -94,7 +97,6 @@
     position: absolute;
     top: 20px;
     right: 20px;
-
     z-index: 8;
 
     cursor: pointer;
