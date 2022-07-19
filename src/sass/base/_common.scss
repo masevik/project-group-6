@@ -8,7 +8,9 @@ body {
   color: var(--black-text-color);
   background-color: #ffffff;
 }
-
+body.no-scroll {
+  overflow: hidden;
+}
 .list {
   list-style: none;
 }

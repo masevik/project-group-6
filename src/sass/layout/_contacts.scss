@@ -248,3 +248,11 @@
   text-indent: 20px;
   text-align: justify;
 }
+
+.modal-backdrop {
+  background-color: rgba(199, 131, 147, 0.7);
+}
+
+.modal-title {
+  color: var(--accent-color);
+}
