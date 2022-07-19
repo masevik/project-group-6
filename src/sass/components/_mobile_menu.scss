@@ -80,6 +80,8 @@
 }
 
 .mobnavigation__link {
+  font-size: 14px;
+
   &:hover,
   &:focus,
   &--current {
@@ -89,4 +91,17 @@
 
 .mobnavigation__item:first-child {
   border-top: 1px solid #e18298;
+}
+
+.mobnavigation__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.mobnavigation__btn__btn-text {
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
 }
