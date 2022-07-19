@@ -36,21 +36,26 @@
 }
 
 .cake__close {
-  color: #ffa5ba;
+  color: #ffb8ca;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   font-size: 35px;
   font-weight: 700;
   position: absolute;
-  top: -11px;
-  right: 5px;
+  top: -5px;
+  right: 10px;
 }
+.cake__close:hover,
+.cake__close:focus {
+  color: #d41443;
+}
+
 .cake__content {
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #faecec;
   padding: 30px 30px;
   position: relative;
-  box-shadow: inset 0 0 10px 5px rgb(0 0 0 / 30%);
+  box-shadow: inset 0 0 10px 5px rgba(212, 4, 4, 0.3);
 }
 .modal__close {
   color: #ffa5ba;
@@ -64,23 +69,27 @@
 }
 .cake__change {
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #d41443;
-  margin-bottom: 15px;
+
   font-family: Titan One;
-  font-size: 24px;
   font-weight: 400;
-  line-height: 1.33;
+  font-size: 30px;
+  line-height: calc(34 / 30);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 .cake__label {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.8;
-
-  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 .cake__form {
   width: 100%;
@@ -89,17 +98,30 @@
 .cake__select {
   width: 100%;
   padding: 3px;
-  color: black;
-  background-color: #c2e297;
+  color: #ffffff;
   margin-bottom: 5px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
 }
+
+.cake__select--shoco {
+  background: #ebd6b9;
+}
+.cake__select--green {
+  background: #d0debd;
+}
+
+.cake__select--rose {
+  background: #ffb8ca;
+}
+
 .cake__title {
   margin-top: 10px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #d41443;
-
   font-family: Titan One;
   font-size: 14px;
   font-weight: 400;
@@ -112,6 +134,51 @@
   margin-bottom: 10px;
 }
 
+.cake__input,
+.cake__comment-text {
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
 .cake__comment-text {
   width: 100%;
+  resize: none;
+}
+
+.cake__name,
+.cake__comment-label {
+  margin-bottom: 5px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  display: flex;
+  align-items: center;
+  color: #d41443;
+}
+
+.cake__button {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  width: 209px;
+  height: 44px;
+  cursor: pointer;
+  color: #ffa5ba;
+  background-color: #d41443;
+  transition: background-color var(--transition-function),
+    color var(--transition-function);
+  border: none;
+  border-radius: 22px;
+  outline: none;
+  padding: 10px 48px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  align-items: center;
+  text-align: center;
 }
