@@ -203,6 +203,7 @@
   &:hover,
   &:focus {
     background-color: #ef5b7f;
+    color: var(--white-text-color);
 
     transition: background-color var(--transition-function);
   }
@@ -220,6 +221,7 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    color: var(--accent-color);
 
     transition: background-color var(--transition-function);
   }
