@@ -12,17 +12,21 @@
     margin-bottom: 16px;
   }
 }
-
+.advantages__grid {
+  @include desktop {
+    padding: 0 32px;
+  }
+}
 .advantages__text {
   @include font(12px, 700, 1.16);
   color: #000000;
-  max-width: 220px;
+  max-width: 162px;
 }
 .advantages {
   background: #fff5f6;
   padding-bottom: 60px;
   @include desktop {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 }
 .advantages__list:not(:last-child) {
@@ -33,7 +37,7 @@
   display: block;
   @include tablet {
     display: grid;
-    grid-template-columns: 180px 162px 159px;
+    grid-template-columns: 182px 184px 159px;
   }
   @include desktop {
     display: grid;
