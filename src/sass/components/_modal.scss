@@ -1,0 +1,83 @@
+.backdrop {
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(199, 131, 147, 0.7);
+  padding: 0 15px;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+.modal__body {
+  padding: 20px;
+  width: 100%;
+  max-width: 450px;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  @include tablet {
+    min-width: 450px;
+  }
+  @include desktop {
+    max-width: 540px;
+  }
+}
+.modal__content {
+  position: relative;
+  padding: 30px 15px 20px;
+  width: 100%;
+  background-color: whitesmoke;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.farm__title {
+  margin-bottom: 15px;
+  @include font(24px, 400, 1.33);
+  font-family: 'Titan One';
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+  @include tablet {
+    font-size: 28px;
+  }
+  @include desktop {
+    font-size: 30px;
+  }
+}
+.farm__text {
+  color: rgb(36 5 16 / 84%);
+  max-width: 320px;
+  margin: 0 auto 20px;
+  line-height: 1.33;
+}
+.modal__close {
+  right: 5px;
+  top: -11px;
+  position: absolute;
+  color: rgba(255, 165, 186, 1);
+  font-weight: 700;
+  border: none;
+  font-size: 35px;
+  background-color: transparent;
+}
+.modal__close:hover {
+  color: #d41443;
+}
+.farm__video {
+  width: 100%;
+  height: 200px;
+}
