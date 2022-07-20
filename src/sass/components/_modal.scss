@@ -20,6 +20,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: visible;
+  z-index: 10;
 }
 .modal__body {
   padding: 20px;
@@ -43,7 +44,6 @@
   width: 100%;
   background-color: whitesmoke;
   box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
-  z-index: 10;
 }
 .farm__title {
   margin-bottom: 15px;
