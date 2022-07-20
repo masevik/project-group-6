@@ -1,81 +1,107 @@
-.menu__button {
-
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    cursor: pointer;
-    margin: 0;
-    padding: 27px 20px;
-    border: none;
-    background-color: transparent;
-    
-    @include tablet{
-        top: 24px;
-        right: 204px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-}
 .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(135, 109, 109, 0.3);
-    z-index: 5;
-    
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  display: flex;
+  //   display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  //   min-width: 250px;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  background-color: #e17992;
+  z-index: 100;
 
-    transition: opacity 200ms linear, visibility 200ms linear;
+  visibility: hidden;
+  opacity: 0;
+
+  transform: translateX(100%);
+  transition: transform var(--transition-function),
+    visibility var(--transition-function), opacity var(--transition-function);
+
+  @include tablet {
+    width: 40vw;
+  }
 }
 
 .mobile-menu.is-open {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  //   display: flex;
 }
 
+.menu__button {
+  cursor: pointer;
+  margin-left: auto;
+  padding: 24px 0px;
+  border: none;
+  background-color: transparent;
 
-.mobile-menu .content {
-    position: fixed;
-    top: 0;
-    left: calc(100% - 250px);
-    width: 100%;
-    height: 100vh;
-    
-    display: flex;
+  @include tablet {
+    padding: 46px 32px;
+    z-index: 1;
+  }
 
- 
-    background-color: #E17992;
-    width: 250px;
-    box-shadow: -8px 0px 20px rgba(0, 0, 0, .25);
-
-    transform: translateX(200%);
-    transition: transform 100ms linear 250ms;
+  @include desktop {
+    display: none;
+  }
 }
 
-.mobile-menu.is-open .content {
-    transform: translateX(0);
+.navigation__buy-btn {
+  margin: 60px auto 19px;
 }
 
 .mobile-menu__button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
 
-    z-index: 8;
+  @include desktop {
+    display: none;
+  }
+}
 
-    cursor: pointer;
-    display: inline-flex;
-    // margin: 0;
-    // padding: 0;
-    border: none;
-    background-color: transparent;
+.mobnavigation__item {
+  padding: 12px 20px;
+  color: var(--white-text-color);
+  border-bottom: 1px solid #e18298;
+
+  &:hover,
+  &:focus,
+  &--current {
+    color: var(--accent-color);
+  }
+}
+
+.mobnavigation__link {
+  font-size: 14px;
+
+  &:hover,
+  &:focus,
+  &--current {
+    color: var(--accent-color);
+  }
+}
+
+.mobnavigation__item:first-child {
+  border-top: 1px solid #e18298;
+}
+
+.mobnavigation__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.mobnavigation__btn__btn-text {
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
 }

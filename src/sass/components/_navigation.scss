@@ -1,62 +1,87 @@
 .navigation {
-    width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @include desktop {
+    justify-content: space-between;
+  }
 }
 
+.navigation__container {
+  width: 100%;
+  margin-top: 18px;
+}
 .navigation__list {
-    padding-top: 123px;
+  padding-top: 123px;
+  display: none;
 
-//  @include desktop{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//  }
-    
+  @include desktop {
+    display: flex;
+    padding-top: 0;
+  }
 }
 
 .navigation__item {
-    display: inline-block;
-    width: 100%;
-    border-top: 1px solid #E18298;
-    border-bottom: 1px solid #E18298;
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+  @include desktop {
+    width: auto;
+    border: none;
+  }
+}
+.navigation__item:last-child a {
+  @include desktop {
+    margin-right: 0;
+  }
 }
 
 .navigation__link {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    padding: 11px 20px;
-    
-    font-family: 'DM Sans';
-    font-style: normal;
+  padding: 11px 20px;
 
-    @include font(14px, 700, 1.29);
-    display: flex;
-    align-items: center;
+  font-family: 'DM Sans';
+  font-style: normal;
 
-    color: #fff;
-    transition: color 250ms var(--timing-function);
+  @include font(14px, 700, 1.29);
+  display: flex;
+  align-items: center;
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
+  color: #fff;
+  transition: color 250ms var(--timing-function);
+
+  @include desktop {
+    margin-right: 35px;
+    width: auto;
+    padding: 52px 0px;
+    @include font(16px, 700, 1.31);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .navigation__link--current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-.navigation__buy-btn{
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
+.navigation__buy-btn {
+  background-color: #ffffff;
+}
+.navigation__buy-btn.button {
+  @include desktop {
+    display: none;
+  }
 }
 
-.navigation__buy-btn-icon{
-    stroke: #D41443;
+.navigation__buy-btn-icon {
+  stroke: #d41443;
 }
