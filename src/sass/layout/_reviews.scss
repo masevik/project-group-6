@@ -9,7 +9,8 @@
 .customers-clients-5,
 .customers-clients-6,
 .customers-clients-7,
-.customers-clients-8 {
+.customers-clients-8,
+.customers-clients-9 {
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
@@ -73,7 +74,7 @@
   @media screen and (min-width: 768px) {
     max-width: 620px;
     height: 100%;
-    padding: 20px 0px 36px 0px
+    padding: 20px 0px 36px 0px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -107,13 +108,14 @@
   padding: 13px 8px 0px 15px;
   background: url('../images/lapki.png') no-repeat,
     linear-gradient(to bottom, #fafafa 40px, transparent 40px),
-    repeating-linear-gradient(to top,
+    repeating-linear-gradient(
+      to top,
       #e1e1e1,
       #e1e1e1 1px,
       #fafafa 1px,
-      #fafafa 30px);
-  background-position: 3px 0px,
-    0px 0px;
+      #fafafa 30px
+    );
+  background-position: 3px 0px, 0px 0px;
 
   // outline: 1px solid black;
   @media screen and (min-width: 768px) {
@@ -152,7 +154,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    margin-bottom: 37px
+    margin-bottom: 37px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -199,7 +201,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-
 }
 
 .swiper-pagination-bullet {
