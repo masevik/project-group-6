@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +20,8 @@
   </head>
   <body>
     <include src="./partials/header.html"></include>
+    <include src="./partials/mobile_menu.html"></include>
+    <include src="./partials/buy_now.html"></include>
     <main>
       <include src="./partials/hero.html"></include>
       <include src="./partials/products.html"></include>
@@ -30,13 +32,14 @@
       <include src="./partials/contacts.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
+    <include src="./partials/modal.html"></include>
+    <script src="./js/preloader.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

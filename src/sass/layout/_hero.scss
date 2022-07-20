@@ -2,17 +2,15 @@
   width: 100vw;
   height: 502px;
   background-color: var(--main-background-color);
-  overflow-x: hidden;
+  overflow: hidden;
   border: none;
 
   @include tablet {
-    /*width: 768px;*/
     height: 416px;
     margin: 0 auto;
   }
 
   @include desktop {
-    /*width: 1200px;*/
     height: 664px;
   }
 }
@@ -54,6 +52,9 @@
   width: 171px;
   height: 410px;
 
+  /*animation: zoomIn 2s linear 1 2s;*/
+  animation: zoomIn 1.5s linear 1 2s;
+
   @include tablet {
     max-width: 143px;
     max-height: 336px;
@@ -94,6 +95,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--white-text-color);
+  /* animation: fadeInLeft 2s linear 1 2s,
+    move-text 1.4s linear infinite alternate 4s; */
+  animation: fadeInLeft 1.5s linear 1 2s,
+    move-text 1.4s linear infinite alternate 4s;
 
   @include tablet {
     @include font(22px, null, 1.136);
@@ -104,6 +109,10 @@
 
     @include font(38px, null, 1.158);
   }
+}
+
+.hero__title-union {
+  display: flex;
 }
 
 .hero__title-contrast {
@@ -120,10 +129,40 @@
   }
 }
 
+.one {
+  animation: change-color 0.8s linear infinite alternate 2.1s;
+}
+
+.two {
+  animation: change-color 0.8s linear infinite alternate 2.3s;
+}
+
+.three {
+  animation: change-color 0.8s linear infinite alternate 2.5s;
+}
+
+.four {
+  animation: change-color 0.8s linear infinite alternate 2.7s;
+}
+
+.five {
+  animation: change-color 0.8s linear infinite alternate 2.9s;
+}
+
+.six {
+  animation: change-color 0.8s linear infinite alternate 3.1s;
+}
+
+.seven {
+  animation: change-color 0.8s linear infinite alternate 3.3s;
+}
+
 /*-------Buttons----------*/
 
 .hero__list {
   display: flex;
+  /* animation: fadeInLeft 2s linear 1 2.1s; */
+  animation: fadeInLeft 1.5s linear 1 2.1s;
 }
 
 .hero__item {
@@ -164,6 +203,7 @@
   &:hover,
   &:focus {
     background-color: #ef5b7f;
+    color: var(--white-text-color);
 
     transition: background-color var(--transition-function);
   }
@@ -181,6 +221,7 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    color: var(--accent-color);
 
     transition: background-color var(--transition-function);
   }
@@ -211,6 +252,9 @@
   width: 152px;
   height: 154px;
 
+  /* animation: fadeInUp 2s linear 1 2s, tada 1.5s 2 5s; */
+  animation: fadeInUp 1.5s linear 1 2s, tada 1.5s 2 5s;
+
   @include desktop {
     width: 213px;
     height: 216px;
@@ -238,6 +282,9 @@
 }
 
 .hero__milk-link {
+  /* animation: fadeInUp 2s linear 1 2s; */
+  animation: fadeInUp 1.5s linear 1 2s;
+
   @include tablet {
     &:hover .hero__milk-btn-icon,
     &:focus .hero__milk-btn-icon {
@@ -326,6 +373,9 @@
     position: absolute;
     top: 94px;
     right: 42px;
+
+    /* animation: fadeInRight 2s linear 1 2s; */
+    animation: fadeInRight 1.5s linear 1 2s;
   }
 
   @include desktop {
@@ -379,6 +429,9 @@
     right: 32px;
     width: 190px;
     height: 150px;
+
+    /* animation: fadeInUp 2s linear 1 2s; */
+    animation: fadeInUp 1.5s linear 1 2s;
   }
 
   @include desktop {

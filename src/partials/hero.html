@@ -1,5 +1,6 @@
 <section class="hero">
-  <div class="container hero__container">
+  <div id="loading" onload="preload()">Wondering minds</div>
+  <div class="containers hero__container">
     <!--   Central background-color   -->
     <div class="hero__bg"></div>
     <!--   Icecream   -->
@@ -40,7 +41,15 @@
         <br />
         made with
         <br />
-        <span class="hero__title-contrast">passion</span>
+        <span class="hero__title-union">
+          <span class="hero__title-contrast one">p</span>
+          <span class="hero__title-contrast two">a</span>
+          <span class="hero__title-contrast three">s</span>
+          <span class="hero__title-contrast four">s</span>
+          <span class="hero__title-contrast five">i</span>
+          <span class="hero__title-contrast six">o</span>
+          <span class="hero__title-contrast seven">n</span>
+        </span>
       </h1>
       <ul class="hero__list list">
         <li class="hero__item">
@@ -87,11 +96,11 @@
             We using special milk processing technology. Feel a delicate creamy
             taste of your favorite ice cream.
           </p>
-          <button type="button" class="hero__milk-btn">
+          <p class="hero__milk-btn">
             <svg width="7" height="7" class="hero__milk-btn-icon">
               <use href="./images/icons.svg#icon-right-arrow-svg"></use>
             </svg>
-          </button>
+          </p>
         </a>
       </div>
     </div>
@@ -111,7 +120,16 @@
     <!--   Girl   -->
     <div>
       <picture>
-        <source
+        <source srcset="./images/herogirl.gif 1x" type="img/gif" />
+        <img
+          class="hero__girl"
+          src="./images/herogirl.gif"
+          alt="girl with
+        icecream"
+          width="190"
+          height="150"
+        />
+        <!-- <source
           srcset="./images/herogirl.png 1x, ./images/herogirl-2x.png 2x"
           media="(min-width: 1200px)"
           type="image/png"
@@ -121,8 +139,14 @@
           media="(min-width: 768px)"
           type="image/png"
         />
-        <img class="hero__girl"" src="./images/herogirl.png" alt="girl with
-        icecream" width="190" height="150" />
+        <img
+          class="hero__girl"
+          src="./images/herogirl.png"
+          alt="girl with
+        icecream"
+          width="190"
+          height="150"
+        /> -->
       </picture>
     </div>
   </div>
