@@ -10,112 +10,51 @@
           height="50"
         />
       </a>
-      <!-- Кнопка бургер -->
-      <button
-        type="button"
-        class="menu__button"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-        data-modal-open
-      >
-        <svg width="20px" height="12px" aria-label="Мобільне меню">
-          <use
-            class="menu__icon--burger"
-            href="./images/icons.svg#icon-burger"
-          ></use>
-        </svg>
-      </button>
-      <!-- Кнопка "Buy now" -->
-      <button
-        class="buy-button button"
-        type="button"
-        name="buy-button"
-        data-modal-buynow-header-open
-      >
-        <span>Buy now </span>
-        <svg class="buy-button-icon" width="6" height="9">
-          <use href="./images/icons.svg#icon-buttonsvg"></use>
-        </svg>
-      </button>
-      <!-- Меню -->
-      <div class="mobile-menu" id="mobile-menu" data-modal>
-        <div class="content">
-          <!-- Кнопка закриття меню -->
-          <button
-            type="button"
-            class="mobile-menu__button"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-modal-close
+      <ul class="navigation__list list">
+        <li class="navigation__item">
+          <a
+            class="navigation__link navigation__link--current"
+            href="./index.html"
+            >Home</a
           >
-            <svg
-              width="14px"
-              height="14px"
-              aria-label="Закриття мобільного меню"
-            >
-              <use
-                class="menu__icon--close"
-                href="./images/icons.svg#icon-close"
-              ></use>
-            </svg>
-          </button>
-
-          <div class="navigation__container">
-            <button
-              class="navigation__buy-btn button"
-              type="button"
-              name="menu-buy-button"
-              data-modal-buynow-menu-open
-            >
-              <span>Buy now</span>
-              <svg class="navigation__buy-btn-icon" width="6" height="9">
-                <use href="./images/icons.svg#icon-buttonsvg"></use>
-              </svg>
-            </button>
-            <ul class="navigation__list list">
-              <li class="navigation__item">
-                <a
-                  class="navigation__link navigation__link--current"
-                  href="./index.html"
-                  data-modal-close-menu-btn
-                  >Home</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a
-                  class="navigation__link"
-                  href="#about"
-                  data-modal-close-menu-btn2
-                  >About us</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a
-                  class="navigation__link"
-                  href="#how-made"
-                  data-modal-close-menu-btn3
-                  >How it's made</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a
-                  class="navigation__link"
-                  href="#product"
-                  data-modal-close-menu-btn4
-                  >Our products</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a
-                  class="navigation__link"
-                  href="#contacts"
-                  data-modal-close-menu-btn5
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link link" href="#about">About us</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link link" href="#about">How it's made</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link link" href="#products">Our products</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+      <div class="header__wrap">
+        <!-- Кнопка бургер -->
+        <button
+          type="button"
+          class="menu__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu__icon--burger" width="20px" height="12px">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <!-- Кнопка "Buy now" -->
+        <button
+          class="buy-button button"
+          type="button"
+          name="buy-button"
+          data-modal-buynow-menu-open
+        >
+          <span>Buy now </span>
+          <svg class="buy-button-icon" width="6" height="9">
+            <use href="./images/icons.svg#icon-buttonsvg"></use>
+          </svg>
+        </button>
       </div>
     </nav>
   </div>

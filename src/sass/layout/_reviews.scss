@@ -1,9 +1,19 @@
+.customers {
+  padding-bottom: 40px;
+}
+
 .customers-clients-1,
 .customers-clients-2,
-.customers-clients-3 {
+.customers-clients-3,
+.customers-clients-4,
+.customers-clients-5,
+.customers-clients-6,
+.customers-clients-7,
+.customers-clients-8 {
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 16px;
   }
@@ -16,32 +26,58 @@
 }
 
 .customers-clients-1 {
-  background-image: url('../images/reviewer1.png');
+  background-image: url('../images/melychkovych.jpg');
 }
 
 .customers-clients-2 {
-  background-image: url('../images/reviewer2.png');
+  background-image: url('../images/aseeva.jpg');
 }
 
 .customers-clients-3 {
-  background-image: url('../images/reviewer3.png');
+  background-image: url('../images/Chernetskiy.jpg');
+}
+
+.customers-clients-4 {
+  background-image: url('../images/zdyr.jpeg');
+}
+
+.customers-clients-5 {
+  background-image: url('../images/nikolayenko.jpg');
+}
+
+.customers-clients-6 {
+  background-image: url('../images/melnyk.jpg');
+}
+
+.customers-clients-7 {
+  background-image: url('../images/melnychenko.jpeg');
+}
+
+.customers-clients-8 {
+  background-image: url('../images/gyrjyi.jpg');
+}
+
+.customers-clients-9 {
+  background-image: url('../images/holochenko.jpg');
 }
 
 .customers-text-container {
   position: relative;
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   height: 100%;
   background-color: #fafafa;
   padding: 32px 50px 17px;
   margin: 0 auto;
+
   @media screen and (min-width: 768px) {
-    width: 620px;
+    max-width: 620px;
     height: 100%;
     padding: 20px 0px 36px 0px
   }
 
   @media screen and (min-width: 1200px) {
-    width: 968px;
+    max-width: 968px;
     height: 100%;
     padding: 32px 74px 31px 73px;
   }
@@ -56,34 +92,36 @@
   @media screen and (min-width: 768px) {
     max-width: 608px;
   }
+
   @media screen and (min-width: 1200px) {
     max-width: 821px;
   }
 }
 
 .customers-text {
-  width: 180px;
+  max-width: 180px;
   height: 100%;
   font-size: 12px;
   line-height: 2.5;
   text-align: center;
   padding: 13px 8px 0px 15px;
   background: url('../images/lapki.png') no-repeat,
-  linear-gradient(to bottom, #fafafa 40px, transparent 40px),
-  repeating-linear-gradient(to top,
-    #e1e1e1,
-    #e1e1e1 1px,
-    #fafafa 1px,
-    #fafafa 30px);
+    linear-gradient(to bottom, #fafafa 40px, transparent 40px),
+    repeating-linear-gradient(to top,
+      #e1e1e1,
+      #e1e1e1 1px,
+      #fafafa 1px,
+      #fafafa 30px);
   background-position: 3px 0px,
-  0px 0px;
+    0px 0px;
+
   // outline: 1px solid black;
   @media screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 14px;
     line-height: 2.14;
     letter-spacing: 0.04em;
-    width: 100%;
+    max-width: 100%;
     padding: 18px 48px 2px 46px;
     background-position: 6px 0px, 0px 0px;
   }
@@ -93,7 +131,7 @@
     font-size: 16px;
     line-height: 1.9em;
     letter-spacing: 0.04em;
-    width: 100%;
+    max-width: 100%;
     padding: 17px 36px 3px 35px;
     background-position: 0px 0px, 0px 0px;
   }
@@ -116,6 +154,7 @@
     font-size: 16px;
     margin-bottom: 37px
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 20px;
   }
@@ -159,15 +198,8 @@
 .swiper-pagination {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  padding: 0 100px;
-  @media screen and (min-width: 768px) {
-    padding: 0 324px;
-  }
-  
-    @media screen and (min-width: 1200px) {
-    padding: 0 540px;
-  }
+  justify-content: center;
+
 }
 
 .swiper-pagination-bullet {
