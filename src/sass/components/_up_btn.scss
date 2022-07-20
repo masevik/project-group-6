@@ -1,0 +1,27 @@
+.fixed_button__link {
+  position: fixed; /*задаём тип позиции, в нашем случае - фиксированная*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px; /* отступ сверху*/
+  right: 20px; /* отступ слева*/
+  width: 35px; /* ширина кнопки*/
+  height: 35px; /* высота кнопки*/
+  z-index: 999; /*позиция относительно дальности*/
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  border-radius: 50%;
+
+  transition: background-color var(--transition-function),
+    fill var(--transition-function), color var(--transition-function);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: var(--accent-color);
+  }
+}
+
+.fixed_button__icon {
+  fill: currentColor;
+}
