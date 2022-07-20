@@ -1,0 +1,42 @@
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+
+  transform: translateX(-120%);
+  background: var(--white-background-color);
+
+  /*  animation: move-overlay 5s ease-out 1; */
+  animation: zoom-overlay 2s ease-out 1;
+}
+
+.hero__overlay-text {
+  color: var(--accent-color);
+  text-align: center;
+  font-family: 'Titan One', arial;
+  @include font(40px, 900, 1.5);
+  letter-spacing: 0.1em;
+  padding-top: 30px;
+
+  @include tablet {
+    @include font(60px, 900, 1.2);
+    padding-top: 40px;
+  }
+
+  @include desktop {
+    @include font(100px, 900, 1.2);
+    padding-top: 70px;
+  }
+}
+
+.hero__overlay-img {
+  margin: 0 auto;
+  width: 300px;
+
+  @include desktop {
+    width: 500px;
+  }
+}
