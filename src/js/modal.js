@@ -2,6 +2,11 @@
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
+    closeModalMenuBtn: document.querySelector('[data-modal-close-menu-btn]'),
+    closeModalMenuBtn2: document.querySelector('[data-modal-close-menu-btn2]'),
+    closeModalMenuBtn3: document.querySelector('[data-modal-close-menu-btn3]'),
+    closeModalMenuBtn4: document.querySelector('[data-modal-close-menu-btn4]'),
+    closeModalMenuBtn5: document.querySelector('[data-modal-close-menu-btn5]'),
     modal: document.querySelector('[data-modal]'),
     //переменные для About
     openModalAboutBtn: document.querySelector('[data-modal-about-open]'),
@@ -22,6 +27,11 @@
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalMenuBtn.addEventListener('click', toggleModal);
+  refs.closeModalMenuBtn2.addEventListener('click', toggleModal);
+  refs.closeModalMenuBtn3.addEventListener('click', toggleModal);
+  refs.closeModalMenuBtn4.addEventListener('click', toggleModal);
+  refs.closeModalMenuBtn5.addEventListener('click', toggleModal);
   //переменные для About
   refs.openModalAboutBtn.addEventListener('click', toggleModalAbout);
   refs.closeModalAboutBtn.addEventListener('click', toggleModalAbout);
