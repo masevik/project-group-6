@@ -1,42 +1,49 @@
 .header {
-    background: #FFB8CA;
-    position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
-.header_container{
-    position: fixed;
+
+.header__wrap {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  @include desktop {
+    margin-left: 0;
+  }
+}
+
+.header__container {
+  position: relative;
+
+  @include tablet {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include desktop {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 .header__logo {
-    margin: 8px 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  // margin: 8px 20px;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  margin-top: 8px;
 
-    @media screen and (max-width: 319px){
-        display: block;
-        width: 70%;
-    }
-        @include tablet {
-            display: block;
-            position: absolute;
-            margin: 0;
-            top: 32px;
-            left: 32px;
-        }
-}
-.buy-button {
-    display: none;
-    position: absolute;
-    top: 32px;
-    right: 32px;
-    width: 160px;
-    padding: 0;
-    background-color: #fff;
-
-    @include tablet {
-        display: block;
-    }
-}
-
-.buy-button-icon {
-    stroke: #D41443;
+  @media screen and (max-width: 319px) {
+    // display: block;
+    // width: 70%;
+  }
+  @include tablet {
+    // display: block;
+    // position: absolute;
+    // margin: 0;
+    // top: 32px;
+    // left: 32px;
+  }
 }

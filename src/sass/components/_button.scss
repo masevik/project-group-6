@@ -39,3 +39,22 @@
     stroke: var(--accent-color);
   }
 }
+
+.buy-button {
+  display: none;
+  // position: absolute;
+  // top: 35px;
+  // right: 32px;
+  width: 160px;
+  padding: 10px 35px;
+  background-color: #fff;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.buy-button-icon {
+  stroke: #d41443;
+  margin-left: 5px;
+}
