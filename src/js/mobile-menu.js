@@ -2,11 +2,16 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-  const closeMenuBtn1 = document.querySelector('[js-close-menu-btn1]');
-  const closeMenuBtn2 = document.querySelector('[js-close-menu-btn2]');
-  const closeMenuBtn3 = document.querySelector('[js-close-menu-btn3]');
-  const closeMenuBtn4 = document.querySelector('[js-close-menu-btn4]');
-  const closeMenuBtn5 = document.querySelector('[js-close-menu-btn5]');
+  // const closeMenuBtn1 = document.querySelector('[js-close-menu-btn1]');
+  // const closeMenuBtn2 = document.querySelector('[js-close-menu-btn2]');
+  // const closeMenuBtn3 = document.querySelector('[js-close-menu-btn3]');
+  // const closeMenuBtn4 = document.querySelector('[js-close-menu-btn4]');
+  // const closeMenuBtn5 = document.querySelector('[js-close-menu-btn5]');
+  const closeMenuBtn1 = document.querySelector('.js-close-menu-btn1');
+  const closeMenuBtn2 = document.querySelector('.js-close-menu-btn2');
+  const closeMenuBtn3 = document.querySelector('.js-close-menu-btn3');
+  const closeMenuBtn4 = document.querySelector('.js-close-menu-btn4');
+  const closeMenuBtn5 = document.querySelector('.js-close-menu-btn5');
 
   const toggleMenu = () => {
     const isMenuOpen =

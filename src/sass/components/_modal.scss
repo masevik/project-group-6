@@ -20,6 +20,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: visible;
+  z-index: 10;
 }
 .modal__body {
   padding: 20px;
@@ -28,6 +29,7 @@
   position: absolute;
   bottom: 50%;
   right: 50%;
+  z-index: 10;
   transform: translate(50%, 50%);
   @include tablet {
     min-width: 450px;
