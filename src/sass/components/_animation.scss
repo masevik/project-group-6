@@ -131,7 +131,7 @@
     transform: scale3d(1, 1, 1);
   }
 
-  99% {
+  90% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -139,8 +139,8 @@
 
   100% {
     opacity: 0;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(0.7, 0.7, 0.7);
+    transform: scale3d(0.7, 0.7, 0.7);
   }
 }
 
